@@ -2,6 +2,7 @@
 tabuleiro = {}
 #o tabuleiro de xadrez contém 64 casas, portanto vai de 1 a 64
 #a cada casa dobra-se o número de grãos colocados sobre a casa
+#a primeira casa se inicia com um grão
 def espalhar_graos():
     global tabuleiro
     graos = 1
@@ -13,7 +14,7 @@ def espalhar_graos():
 def buscar_casa(qtd_graos):
     global tabuleiro
     if tabuleiro.get(qtd_graos) == None:
-        print("Não há nenhuma casa no tabuleiro com essa quantidade de grãos.")
+        print("Não se deve colocar essa quantidade de grãos.")
     else:
         print(tabuleiro.get(qtd_graos))
 
